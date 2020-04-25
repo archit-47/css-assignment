@@ -52,11 +52,11 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px){
 	.menu-item#chicken{
-		width:44%;
+		width:43%;
 		float:left;
 	}		
 	.menu-item#beef{
-		width:44%;
+		width:43%;
 		float:left;
 	}
 	.menu-item#sushi{
