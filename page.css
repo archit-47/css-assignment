@@ -1,73 +1,62 @@
 header#main {
-	text-align: center;
-	color:aqua;
-	font-size: 1.3em;
-	font-family: Verdana;
+  text-align: center;
 }
 
 body {
   font-size: 1em;
 }
 
-*{
-	box-sizing: border-box;
+.menu:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.menu-item{
-	border: 1px solid black;
-  	padding: 20px;
-  	margin: 20px;
-  	background-color: lightgrey;
+.menu-content {
+  border: 1px solid black;
+  padding: 20px 20px 0px;
+  margin: 10px;
+  background-color: lightgrey;
 }
 
-.menu-item > header {
-  	float: right;
-  	margin: -20px;
-  	padding: 0px 40px;
-	font-size: 1.25em;
-  	border: 1px solid black;
+.menu-content > header {
+  float: right;
+  margin: -20px;
+  padding: 0px 40px;
+  font-size: 1.25em;
+  border: 1px solid black;
 }
 
-.menu-item#chicken > header{
-	color: white;
-	background-color: crimson;
+.menu-item#chicken header {
+  color: white;
+  background-color: crimson;
 }
 
-.menu-item#beef > header{
-	color : white;
-  	background-color: maroon;
+.menu-item#beef header {
+  color: white;
+  background-color: maroon;
 }
 
-.menu-item#sushi > header{
-	color: maroon;
-  	background-color: lightgreen;
+.menu-item#sushi header {
+  color: maroon;
+  background-color: lightgreen;
 }
 
-@media (min-width: 992px){
-	.menu-item{
-		width: 29%;
-		float: left;
-	}
+@media (min-width: 992px) {
+  .menu-item {
+    width: 33.3333%;
+    float: left;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-	.menu-item#chicken{
-		width:43%;
-		float:left;
-	}		
-	.menu-item#beef{
-		width:43%;
-		float:left;
-	}
-	.menu-item#sushi{
-		clear:left;
-		float:none;
-	}
-}
-
-@media (max-width: 767px){
-	.menu-iteam{
-		float:none;
-		clear:right;
-	}
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item#chicken,
+  .menu-item#beef {
+    width: 50%;
+    float: left;
+  }
+  .menu-item#sushi {
+    clear: left;
+    float: none;
+  }
 }
